@@ -44,6 +44,7 @@ body {
   width: 350px;
   height: 350px;
   left: -150px;
+  z-index: 0;
   rotate: 800deg;
   top: 10px;
 }
@@ -54,6 +55,7 @@ body {
   height: 350px;
   rotate: 200deg;
   top: -150px;
+  z-index: 0;
   left: 1120px;
   object-fit: filled;
 }
@@ -235,7 +237,6 @@ button:hover {
 .modal-content input,
 .modal-content textarea {
   width: 95%;
-  z-index: ;
   padding: 10px;
   margin-bottom: 10px;
   border: none;
@@ -279,4 +280,9 @@ button {
   .ticket img {
     display: none;
   }
+}
+.titre_m{
+margin-top:20px ;
+font-size: 30px;
+outline: 2px solid white;
 }

@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Display = ({ title, description, posterURL, rating }) => {
+  const navigate=useNavigate();
+
   return (
-    <div className="card">
-      <div className="poster">
+    <div className="card" onClick={()=> {navigate(`/movie/${title}`)}}>
+      <div className="poster" >
         <img src={posterURL} />
       </div>
       <div className="detail">
